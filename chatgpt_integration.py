@@ -14,7 +14,9 @@ logger = logging.getLogger(__name__)
 # Инициализация OpenAI
 client = None
 if config.OPENAI_API_KEY:
-    client = openai.OpenAI(api_key=config.OPENAI_API_KEY)
+    client = openai.OpenAI(api_key="sk-...")
+
+
 
 class ChatGPTRewriter:
     """Класс для интеграции с ChatGPT API"""
